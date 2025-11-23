@@ -12,7 +12,7 @@
             padding: 20px;
             background-color: #f5f5f5;
         }
-        
+
         .video-container {
             display: flex;
             gap: 20px;
@@ -35,6 +35,13 @@
             height: auto;
             border-radius: 4px;
         }
+
+        .video-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            display: block;
+        }
         
         .video-caption {
             margin-top: 10px;
@@ -45,6 +52,15 @@
             color: #333;
             font-size: 14px;
             line-height: 1.5;
+        }
+
+        /* hide caption containers that are intentionally empty */
+        .video-caption.no-caption {
+            display: none;
+            margin: 0;
+            padding: 0;
+            height: 0;
+            min-height: 0;
         }
     </style>
 </head>
@@ -60,7 +76,7 @@
                 Warangal, Telangana
             </div>
         </div>
-        
+
         <div class="video-item">
             <video controls>
                 <source src="48.mp4" type="video/mp4">
@@ -71,6 +87,45 @@
                 Warangal, Telangana
             </div>
         </div>
+
+        <div class="video-item">
+            <video controls>
+                <source src="49.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        </div>
+
+        <div class="video-item">
+            <video controls>
+                <source src="61.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        </div>
+
+        <!-- Images (captions removed as requested) -->
+        <div class="video-item"><img src="10.jpg" alt="10.jpg"></div>
+        <div class="video-item"><img src="50.jpg" alt="50.jpg"></div>
+        <div class="video-item"><img src="51.jpg" alt="51.jpg"></div>
+        <div class="video-item"><img src="53.jpg" alt="53.jpg"></div>
+        <div class="video-item"><img src="54.jpg" alt="54.jpg"></div>
+        <div class="video-item"><img src="55.jpg" alt="55.jpg"></div>
+        <div class="video-item"><img src="56.jpg" alt="56.jpg"></div>
+        <div class="video-item"><img src="57.jpg" alt="57.jpg"></div>
+        <div class="video-item"><img src="58.jpg" alt="58.jpg"></div>
+        <div class="video-item"><img src="59.jpg" alt="59.jpg"></div>
+        <div class="video-item"><img src="60.jpg" alt="60.jpg"></div>
+        <div class="video-item"><img src="63.jpg" alt="63.jpg"></div>
+        <div class="video-item"><img src="64.jpg" alt="64.jpg"></div>
+        <div class="video-item"><img src="65.jpg" alt="65.jpg"></div>
+        <div class="video-item"><img src="66.jpg" alt="66.jpg"></div>
+        <div class="video-item"><img src="67.jpg" alt="67.jpg"></div>
+        <div class="video-item"><img src="68.jpg" alt="68.jpg"></div>
+        <div class="video-item"><img src="69.jpg" alt="69.jpg"></div>
+        <div class="video-item"><img src="71.jpg" alt="71.jpg"></div>
+        <div class="video-item"><img src="72.jpg" alt="72.jpg"></div>
+
     </div>
 </body>
 </html>
